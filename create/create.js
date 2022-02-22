@@ -21,8 +21,6 @@ form.addEventListener('submit', async (e) => {
     const familyId = data.get('family-id');
     const name = data.get('bunny-name');
   
-
-
     await createBunny({
         family_id: familyId,
         name: name

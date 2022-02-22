@@ -18,9 +18,9 @@ async function displayFamilies() {
     for (let family of families) {
     
         const familyEl = renderFamily(family);
-        console.log(family);
         for (let bunny of family.fuzzy_bunnies) {
             const bunnyEl = renderBunny(bunny);
+
             bunnyEl.addEventListener('click', async () => {
                 await deleteBunny(bunny.id);
                 displayFamilies();
