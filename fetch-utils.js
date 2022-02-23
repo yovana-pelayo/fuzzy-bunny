@@ -18,7 +18,7 @@ export async function deleteBunny(id) { const response = await client .from('fuz
     .delete()
     .match({ id: id })
     .single();
-console.log(id);
+// console.log(id);
 return checkError(response);
 }
 
@@ -63,5 +63,6 @@ export async function logout() {
 }
 
 function checkError({ data, error }) {
+    // eslint-disable-next-line no-console
     return error ? console.error(error) : data;
 }

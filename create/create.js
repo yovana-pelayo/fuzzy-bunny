@@ -9,6 +9,9 @@ checkAuth();
 
 
 const logoutButton = document.getElementById('logout');
+logoutButton.addEventListener('click', () => {
+    logout();
+});
 
     // get the name and family id from the form
 
@@ -29,7 +32,7 @@ form.addEventListener('submit', async (e) => {
     form.reset();
     // location.replace('../families');
    
-    console.log(createBunny);
+    // console.log(createBunny);
 });
 
 
@@ -60,6 +63,3 @@ window.addEventListener('load', async () => {
 
 
 
-logoutButton.addEventListener('click', () => {
-    logout();
-});
