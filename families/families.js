@@ -53,8 +53,3 @@ displayFamilies();
     // append the familyEl to the familiesEl
 
 
-window.addEventListener('load', async () => {
-    const families = await getFamilies();
-
-    displayFamilies(families);
-});
